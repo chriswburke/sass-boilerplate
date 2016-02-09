@@ -4,5 +4,5 @@ var gulp = require( 'gulp' ),
     sass = require( 'gulp-sass' );
 
 gulp.task( 'watch', [ 'clean' ], function () {
-    gulp.watch( './sass/**/*.scss', [ 'sass' ] );
+    gulp.watch( './sass/**/*.scss', [ 'sass:dev' ] );
 } );

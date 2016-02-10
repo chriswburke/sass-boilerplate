@@ -13,9 +13,8 @@
 /// @throws No z-index found for `$layer`.
 /// @return {Number | Null}
 @function z($layer) {
-  @if not map-has-key($z-indexes, $layer) {
-    @warn 'No z-index found for `#{$layer}`.';
-  }
-
-  @return map-get($z-indexes, $layer);
+    @if not map-has-key($z-indexes, $layer) {
+        @warn 'No z-index found for `#{$layer}`.';
+    }
+    @return map-get($z-indexes, $layer);
 }

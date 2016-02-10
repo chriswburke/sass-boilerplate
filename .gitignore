@@ -6,8 +6,7 @@
 bower_components/
 node_modules/
 css/
-test.css*
-
+docs/
 
 #---------------------------------------#
 # IDEs & Editors Ignores                #

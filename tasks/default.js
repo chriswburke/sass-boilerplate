@@ -2,4 +2,4 @@
 
 var gulp = require( 'gulp' );
 
-gulp.task( 'default', ['sass:prod'] )
+gulp.task( 'default', ['sass:prod', 'sassdoc'] )

@@ -1,0 +1,21 @@
+////
+/// Sass Boilerplate utilities.
+/// @group Utilities
+/// @author Sass Boilerplate
+////
+
+/// Helper to manage `z-index`.
+/// Tries to fetch the z-index mapped to `$layer` in `$z-indexes` map.
+/// If found, returns it, else returns `null`.
+/// @example scss
+/// z-index: z("default")
+/// @param {String} $layer - Layer
+/// @throws No z-index found for `$layer`.
+/// @return {Number | Null}
+@function z($layer) {
+  @if not map-has-key($z-indexes, $layer) {
+    @warn 'No z-index found for `#{$layer}`.';
+  }
+
+  @return map-get($z-indexes, $layer);
+}

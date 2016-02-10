@@ -1,0 +1,13 @@
+////
+/// Sass Boilerplate utilities.
+/// @group Utilities
+/// @author Sass Boilerplate
+////
+
+/// Mixin to size elements.
+/// @param {Number} $width           - Width
+/// @param {Number} $height [$width] - Height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

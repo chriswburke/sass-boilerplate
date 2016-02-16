@@ -8,7 +8,7 @@
     "autoprefixer": "postcss -u autoprefixer -r build/css/*",
     "sass": "node-sass --output-style compressed -o build/css src/sass",
     "sassdoc": "sassdoc src/sass -d docs",
-    "serve": "browser-sync start --server --files 'build/css/*.css,'",
+    "serve": "browser-sync start --server --files build/css/*.css",
     "build": "npm run sass && npm run autoprefixer && npm run sassdoc",
     "watch": "onchange 'src/sass/*.scss' -- npm run build",
     "postinstall": "echo To start serving sass run 'npm watch'"
@@ -28,13 +28,11 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
     "node-sass": "^3.4.2",
     "onchange": "^2.0.0",
     "postcss-cli": "^2.5.1",
     "sass-lint": "^1.5.0",
     "sassdoc": "^2.1.20"
-  },
-  "dependencies": {
-    "node-sass": "^3.4.2"
   }
 }
